@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #2e7d32;
+  --secondary: #f6d47c;
+  --background: #f5f7fa;
+  --text: #1f2937;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Button */
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Card */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Login & Register */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    #1b5e20,
+    #388e3c
+  );
+}
+
+.auth-card {
+  width: 400px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.auth-card h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: var(--primary);
+}
+
+/* Navbar */
+.navbar {
+  background: var(--primary);
+  color: white;
+  padding: 15px 30px;
+}
+
+.navbar h1 {
+  font-size: 20px;
+}
+
+/* Hero */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-overlay {
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+/* Jurusan Cards */
+.jurusan-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.jurusan-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,.1);
+  transition: .3s;
+}
+
+.jurusan-card:hover {
+  transform: translateY(-5px);
+}
+
+.jurusan-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.jurusan-content {
+  padding: 15px;
+}
+
+.jurusan-content h2 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.jurusan-content p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Form Pendaftaran */
+.form-section {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+/* Footer */
+.footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
